@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginBottom="@dimen/margin_small"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_date"
+            android:text="@string/date"
+            android:textSize="@dimen/text_size_avg"
+            android:textColor="@color/primary"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_time"
+            android:text="@string/time"
+            android:textSize="@dimen/text_size_avg"
+            android:textColor="@color/primary"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_event_name"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/event_name"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_min" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_event_desc"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/event_name"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_min" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_event_category"
+            android:textSize="@dimen/text_size_min"
+            android:text="@string/event_name"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
